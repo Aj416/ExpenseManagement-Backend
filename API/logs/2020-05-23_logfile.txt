@@ -1,0 +1,21 @@
+2020-05-23 00:23:01.8055 INFO Returned all categories from database.
+2020-05-23 12:10:19.8503 INFO Returned category with id: 1
+2020-05-23 12:10:30.0118 INFO Returned category with id: 4
+2020-05-23 12:45:52.3221 INFO Returned category with id: 4
+2020-05-23 14:04:16.4473 INFO Returned all categories from database.
+2020-05-23 14:04:34.1694 INFO Returned category with id: 4
+2020-05-23 14:56:22.9930 INFO Returned all categories from database.
+2020-05-23 14:57:41.7571 ERROR Something went wrong inside CreateCategory action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateUpdateCategoryDto -> Category
+Entities.DataTransferObjects.CreateUpdateCategoryDto -> Entities.Models.Category
+2020-05-23 15:01:57.3358 INFO Returned all categories from database.
+2020-05-23 15:02:27.0587 INFO Returned category with id: 18
+2020-05-23 15:02:37.2299 INFO Returned all sources from database.
+2020-05-23 15:02:37.3414 ERROR Something went wrong inside GetAllSource action: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[Entities.Models.Source, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Entities.DataTransferObjects.SourceDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+2020-05-23 15:04:03.8083 INFO Returned all sources from database.
