@@ -28,7 +28,7 @@ namespace Repository
         public async Task<IEnumerable<Category>> GetAllCategoryAsync()
         {
             return await FindAll()
-                .OrderBy(c => c.Category1)
+                .OrderBy(c => c.Id)
                 .ToListAsync();
         }
 

@@ -32,10 +32,18 @@ namespace API.Controllers
             try
             {
                 var categories = await _repository.Category.GetAllCategoryAsync();
-                _logger.LogInfo($"Returned all categories from database.");
-
-                var result = _mapper.Map<IEnumerable<CategoryDto>>(categories);
-                return Ok(result);
+                
+                if (categories == null)
+                {
+                    _logger.LogError($"Categories not found in db.");
+                    return NotFound();
+                }
+                else
+                {
+                    _logger.LogInfo($"Returned all categories from database.");
+                    var result = _mapper.Map<IEnumerable<CategoryDto>>(categories);
+                    return Ok(result);
+                }
             }
             catch (Exception ex)
             {
@@ -100,6 +108,7 @@ namespace API.Controllers
                 }
 
                 _mapper.Map(category, categoryEntity);
+                categoryEntity.UpdatedDate = DateTime.Now;
 
                 _repository.Category.UpdateCategory(categoryEntity);
                 await _repository.SaveAsync();

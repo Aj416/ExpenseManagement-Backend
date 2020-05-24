@@ -1,15 +1,12 @@
-﻿using System;
+﻿using AutoMapper;
+using Contracts;
+using Entities.DataTransferObjects;
+using Entities.Models;
+using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Entities;
-using Entities.Models;
-using Contracts;
-using AutoMapper;
-using Entities.DataTransferObjects;
 
 namespace API.Controllers
 {
@@ -47,83 +44,141 @@ namespace API.Controllers
             }
         }
 
-        //// GET: api/Sources/5
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<Source>> GetSource(int id)
-        //{
-        //    var source = await _context.Source.FindAsync(id);
+        // GET: api/Sources/5
+        [HttpGet("{id}", Name = "SourceById")]
+        public async Task<IActionResult> GetSourceById(int id)
+        {
+            try
+            {
+                var source = await _repository.Source.GetSourceByIdAsync(id);
 
-        //    if (source == null)
-        //    {
-        //        return NotFound();
-        //    }
+                if (source == null)
+                {
+                    _logger.LogError($"Source with id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
+                else
+                {
+                    _logger.LogInfo($"Returned source with id: {id}");
 
-        //    return source;
-        //}
+                    var result = _mapper.Map<SourceDto>(source);
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside GetSourceById action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
 
-        //// PUT: api/Sources/5
-        //// To protect from overposting attacks, enable the specific properties you want to bind to, for
-        //// more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> PutSource(int id, Source source)
-        //{
-        //    if (id != source.Id)
-        //    {
-        //        return BadRequest();
-        //    }
+        // PUT: api/Sources/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
+        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateSource(int id, [FromBody] CreateUpdateSourceDto source)
+        {
+            try
+            {
+                if (source == null)
+                {
+                    _logger.LogError("Source object sent from client is null.");
+                    return BadRequest("Source object is null");
+                }
 
-        //    _context.Entry(source).State = EntityState.Modified;
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Invalid source object sent from client.");
+                    return BadRequest("Invalid model object");
+                }
 
-        //    try
-        //    {
-        //        await _context.SaveChangesAsync();
-        //    }
-        //    catch (DbUpdateConcurrencyException)
-        //    {
-        //        if (!SourceExists(id))
-        //        {
-        //            return NotFound();
-        //        }
-        //        else
-        //        {
-        //            throw;
-        //        }
-        //    }
+                var sourceEntity = await _repository.Source.GetSourceByIdAsync(id);
+                if (sourceEntity == null)
+                {
+                    _logger.LogError($"Source with id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
 
-        //    return NoContent();
-        //}
+                _mapper.Map(source, sourceEntity);
+                sourceEntity.UpdatedDate = DateTime.Now;
 
-        //// POST: api/Sources
-        //// To protect from overposting attacks, enable the specific properties you want to bind to, for
-        //// more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        //[HttpPost]
-        //public async Task<ActionResult<Source>> PostSource(Source source)
-        //{
-        //    _context.Source.Add(source);
-        //    await _context.SaveChangesAsync();
+                _repository.Source.UpdateSource(sourceEntity);
+                await _repository.SaveAsync();
 
-        //    return CreatedAtAction("GetSource", new { id = source.Id }, source);
-        //}
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside UpdateSource action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
 
-        //// DELETE: api/Sources/5
-        //[HttpDelete("{id}")]
-        //public async Task<ActionResult<Source>> DeleteSource(int id)
-        //{
-        //    var source = await _context.Source.FindAsync(id);
-        //    if (source == null)
-        //    {
-        //        return NotFound();
-        //    }
+        // POST: api/Sources
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
+        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        [HttpPost]
+        public async Task<IActionResult> CreateSource([FromBody] CreateUpdateSourceDto source)
+        {
+            try
+            {
+                if (source == null)
+                {
+                    _logger.LogError("Source object sent from client is null.");
+                    return BadRequest("Source object is null");
+                }
 
-        //    _context.Source.Remove(source);
-        //    await _context.SaveChangesAsync();
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Invalid source object sent from client.");
+                    return BadRequest("Invalid model object");
+                }
 
-        //    return source;
-        //}
+                var sourceEntity = _mapper.Map<Source>(source);
+                sourceEntity.CreatedDate = DateTime.Now;
+                _repository.Source.CreateSource(sourceEntity);
+                await _repository.SaveAsync();
 
-        //private bool SourceExists(int id)
-        //{
-        //    return _context.Source.Any(e => e.Id == id);
-        //}
+                var createdSource = _mapper.Map<SourceDto>(sourceEntity);
+
+                return CreatedAtRoute("SourceById", new { id = createdSource.Id }, createdSource);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside CreateSource action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+        // DELETE: api/Sources/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteSource(int id)
+        {
+            try
+            {
+                var source = await _repository.Source.GetSourceByIdAsync(id);
+                if (source == null)
+                {
+                    _logger.LogError($"Source with id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
+
+                if (_repository.ExpenseDetail.ExpenseDetailBySource(id).Any())
+                {
+                    _logger.LogError($"Cannot delete source with id: {id}. It has related expenseDetail. Delete those expenseDetail first");
+                    return BadRequest("Cannot delete source. It has related expenseDetail. Delete those expenseDetail first");
+                }
+
+                _repository.Source.DeleteSource(source);
+                await _repository.SaveAsync();
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside DeleteSource action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
     }
 }

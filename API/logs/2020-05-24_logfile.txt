@@ -1,0 +1,12 @@
+2020-05-24 13:21:45.2872 INFO Returned all expenses from database.
+2020-05-24 13:22:41.0119 INFO Returned all expenses from database.
+2020-05-24 14:06:03.4915 ERROR Something went wrong inside GetAllExpense action: Client side GroupBy is not supported.
+2020-05-24 14:07:59.6326 ERROR Something went wrong inside GetAllExpense action: Client side GroupBy is not supported.
+2020-05-24 14:08:16.5387 ERROR Something went wrong inside GetAllExpense action: Client side GroupBy is not supported.
+2020-05-24 19:28:57.5680 ERROR Something went wrong inside GetAllExpense action: The LINQ expression '(EntityShaperExpression: 
+    EntityType: Expense
+    ValueBufferExpression: 
+        (ProjectionBindingExpression: EmptyProjectionMember)
+    IsNullable: False
+).Detail.Amount' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to either AsEnumerable(), AsAsyncEnumerable(), ToList(), or ToListAsync(). See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+2020-05-24 19:43:39.6633 INFO Returned all expenses from database.

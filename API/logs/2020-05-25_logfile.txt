@@ -1,0 +1,19 @@
+2020-05-25 00:05:53.7899 INFO Returned all expenses from database.
+2020-05-25 00:06:07.0797 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-25 00:06:07.2240 ERROR Something went wrong inside GetExpenseWithDetails action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> ExpenseDetailDto
+System.Collections.Generic.List`1[[Entities.Models.Expense, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Entities.DataTransferObjects.ExpenseDetailDto
+2020-05-25 00:06:19.1397 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-25 00:06:19.1991 ERROR Something went wrong inside GetExpenseWithDetails action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> ExpenseDetailDto
+System.Collections.Generic.List`1[[Entities.Models.Expense, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Entities.DataTransferObjects.ExpenseDetailDto
+2020-05-25 00:08:10.5239 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-25 00:10:07.9774 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-25 00:13:25.4748 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-25 00:13:53.6425 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-25 00:14:02.3226 INFO Returned expenses with details on date: 25-05-2020 00:00:00
+2020-05-25 00:17:00.9299 ERROR Expenses on date: 25-05-2020 00:00:00, hasn't been found in db.
