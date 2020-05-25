@@ -58,7 +58,7 @@ namespace Entities
                 entity.HasOne(d => d.Detail)
                     .WithMany(p => p.Expense)
                     .HasForeignKey(d => d.DetailId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .OnDelete(DeleteBehavior.Cascade)
                     .HasConstraintName("FK_ExpenseDetailExpense");
             });
 

@@ -8,7 +8,10 @@ namespace Contracts
     public interface IExpenseRepository : IRepositoryBase<Expense>
     {
         Task<IEnumerable<Expense>> GetAllExpenseAsync();
-
         Task<IEnumerable<Expense>> GetExpenseWithDetailsAsync(DateTime date);
+        Task<Expense> GetExpenseWithDetailsAsync(int id);
+        void CreateExpense(Expense expense);
+        void UpdateExpense(Expense expense);
+        void DeleteExpense(Expense expense);
     }
 }

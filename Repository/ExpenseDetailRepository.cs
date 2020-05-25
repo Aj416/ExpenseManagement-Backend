@@ -15,14 +15,9 @@ namespace Repository
 
         }
 
-        public void CreateExpenseDetail(ExpenseDetail category)
+        public void DeleteExpenseDetail(ExpenseDetail expenseDetail)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public void DeleteExpenseDetail(ExpenseDetail category)
-        {
-            throw new System.NotImplementedException();
+            Delete(expenseDetail);
         }
 
         public IEnumerable<ExpenseDetail> ExpenseDetailByCategory(int categoryId)
@@ -32,22 +27,13 @@ namespace Repository
 
         public IEnumerable<ExpenseDetail> ExpenseDetailBySource(int sourceId)
         {
-            throw new System.NotImplementedException();
+            return FindByCondition(a => a.SourceId.Equals(sourceId)).ToList();
         }
 
-        public Task<IEnumerable<ExpenseDetail>> GetAllExpenseDetailAsync()
+        public async Task<ExpenseDetail> GetExpenseDetailByIdAsync(int id)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public Task<ExpenseDetail> GetExpenseDetailByIdAsync(int id)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void UpdateExpenseDetail(ExpenseDetail category)
-        {
-            throw new System.NotImplementedException();
+            return await FindByCondition(exdet => exdet.Id.Equals(id))
+                .FirstOrDefaultAsync();
         }
     }
 }

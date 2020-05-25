@@ -16,6 +16,16 @@ namespace Repository
 
         }
 
+        public void CreateExpense(Expense expense)
+        {
+            Create(expense);
+        }
+
+        public void DeleteExpense(Expense expense)
+        {
+            Delete(expense);
+        }
+
         public async Task<IEnumerable<Expense>> GetAllExpenseAsync()
         {
             return await FindAll()
@@ -30,6 +40,18 @@ namespace Repository
             return await FindByCondition(exp => exp.Date.Day.Equals(date.Day) && exp.Date.Month.Equals(date.Month) && exp.Date.Year.Equals(date.Year))
                 .Include(exp => exp.Detail)
                 .ToListAsync();
+        }
+
+        public async Task<Expense> GetExpenseWithDetailsAsync(int id)
+        {
+            return await FindByCondition(exp => exp.Id.Equals(id))
+                .Include(exp => exp.Detail)
+                .FirstOrDefaultAsync();
+        }
+
+        public void UpdateExpense(Expense expense)
+        {
+            Update(expense);
         }
     }
 }

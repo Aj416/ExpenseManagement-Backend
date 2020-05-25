@@ -26,12 +26,21 @@ namespace API
             CreateMap<Source, CreateUpdateSourceDto>()
             .ReverseMap();
 
-            CreateMap<Expense, ExpenseDetailDto>()
+            CreateMap<Expense, ExpenseWithDetailDto>()
             .ForMember(dest => dest.ExpenseId, opt => opt.MapFrom(src => src.Id))
             .ForMember(dest => dest.ExpenseDetailId, opt => opt.MapFrom(src => src.DetailId))
             .ForMember(dest => dest.CategoryId, opt => opt.MapFrom(src => src.Detail.CategoryId))
             .ForMember(dest => dest.SourceId, opt => opt.MapFrom(src => src.Detail.SourceId))
             .ForMember(dest => dest.Amount, opt => opt.MapFrom(src => src.Detail.Amount))
+            .ReverseMap();
+
+            CreateMap<Expense, CreateUpdateExpenseDetailDto>()
+            .ForMember(dest => dest.CategoryId, opt => opt.MapFrom(src => src.Detail.CategoryId))
+            .ForMember(dest => dest.SourceId, opt => opt.MapFrom(src => src.Detail.SourceId))
+            .ForMember(dest => dest.Amount, opt => opt.MapFrom(src => src.Detail.Amount))
+            .ReverseMap();
+
+            CreateMap<ExpenseDetail, ExpenseDetailDto>()
             .ReverseMap();
         }
     }

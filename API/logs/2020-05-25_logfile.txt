@@ -17,3 +17,27 @@ System.Collections.Generic.List`1[[Entities.Models.Expense, Entities, Version=1.
 2020-05-25 00:13:53.6425 INFO Returned expenses with details on date: 24-05-2020 00:00:00
 2020-05-25 00:14:02.3226 INFO Returned expenses with details on date: 25-05-2020 00:00:00
 2020-05-25 00:17:00.9299 ERROR Expenses on date: 25-05-2020 00:00:00, hasn't been found in db.
+2020-05-25 15:16:32.1155 INFO Returned all expenses from database.
+2020-05-25 15:16:52.8568 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-25 15:17:14.8396 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-25 15:30:22.1066 INFO Returned all categories from database.
+2020-05-25 18:11:06.6310 INFO Returned all categories from database.
+2020-05-25 18:12:26.5098 INFO Returned all expenses from database.
+2020-05-25 18:12:52.1614 INFO Returned expenses with details on date: 25-05-2020 00:00:00
+2020-05-25 18:38:30.6309 INFO Returned all expenses from database.
+2020-05-25 18:40:46.2449 INFO Returned all expenses from database.
+2020-05-25 18:41:11.6234 INFO Returned expenses with details on date: 25-05-2020 00:00:00
+2020-05-25 18:41:27.8817 INFO Returned expenses with details for id: 4
+2020-05-25 18:43:14.5876 INFO Returned expenses with details for id: 4
+2020-05-25 18:43:22.4397 INFO Returned expenses with details on date: 25-05-2020 00:00:00
+2020-05-25 18:43:35.5001 INFO Returned all expenses from database.
+2020-05-25 18:58:18.5571 INFO Returned all expenses from database.
+2020-05-25 18:58:32.0511 INFO Returned expenses with details on date: 25-05-2020 00:00:00
+2020-05-25 19:16:28.6315 ERROR Expense with id: 5, hasn't been found in db.
+2020-05-25 19:24:50.5408 ERROR Something went wrong inside DeleteExpense action: The instance of entity type 'ExpenseDetail' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2020-05-25 19:31:31.4332 ERROR Something went wrong inside DeleteExpense action: An error occurred while updating the entries. See the inner exception for details.
+2020-05-25 19:34:54.2242 ERROR Something went wrong inside DeleteExpense action: The instance of entity type 'ExpenseDetail' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2020-05-25 21:22:09.5867 ERROR Source with id: 13, hasn't been found in db.
+2020-05-25 21:57:11.2405 INFO Returned ExpenseDetail with id: 4
+2020-05-25 22:05:13.7579 ERROR Something went wrong inside DeleteExpenseDetail action: An error occurred while updating the entries. See the inner exception for details.
+2020-05-25 22:28:56.4336 INFO Returned ExpenseDetail with id: 4

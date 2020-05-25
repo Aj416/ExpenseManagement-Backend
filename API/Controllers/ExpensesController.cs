@@ -50,7 +50,7 @@ namespace API.Controllers
         }
 
         //// GET: api/Expenses/5
-        [HttpGet("{date}/details")]
+        [HttpGet("{date}/details", Name = "ExpenseWithDetailsByDate")]
         public async Task<IActionResult> GetExpenseWithDetails(DateTime date)
         {
             try
@@ -65,7 +65,7 @@ namespace API.Controllers
                 {
                     _logger.LogInfo($"Returned expenses with details on date: {date}");
 
-                    var result = _mapper.Map<IEnumerable<ExpenseDetailDto>>(expenses);
+                    var result = _mapper.Map<IEnumerable<ExpenseWithDetailDto>>(expenses);
                     return Ok(result);
                 }
             }
@@ -76,6 +76,101 @@ namespace API.Controllers
             }
         }
 
+        [HttpGet("{id}", Name = "ExpenseWithDetailsById")]
+        public async Task<IActionResult> GetExpenseWithDetails(int id)
+        {
+            try
+            {
+                var expenses = await _repository.Expense.GetExpenseWithDetailsAsync(id);
+                if (expenses == null)
+                {
+                    _logger.LogError($"Expenses for id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
+                else
+                {
+                    _logger.LogInfo($"Returned expenses with details for id: {id}");
 
+                    var result = _mapper.Map<ExpenseWithDetailDto>(expenses);
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside GetExpenseWithDetails action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateExpense([FromBody] CreateUpdateExpenseDetailDto expense)
+        {
+            try
+            {
+                if (expense == null)
+                {
+                    _logger.LogError("Expense object sent from client is null.");
+                    return BadRequest("Expense object is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Invalid expense object sent from client.");
+                    return BadRequest("Invalid model object");
+                }
+
+                var expenseEntity = _mapper.Map<Expense>(expense);
+
+                _repository.Expense.CreateExpense(expenseEntity);
+                await _repository.SaveAsync();
+
+                var createdExpense = _mapper.Map<ExpenseWithDetailDto>(expenseEntity);
+
+                return CreatedAtRoute("ExpenseWithDetailsById", new { id = createdExpense.ExpenseId }, createdExpense);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside CreateExpense action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateExpense(int id, [FromBody] CreateUpdateExpenseDetailDto expense)
+        {
+            try
+            {
+                if (expense == null)
+                {
+                    _logger.LogError("Expense object sent from client is null.");
+                    return BadRequest("Expense object is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogError("Invalid expense object sent from client.");
+                    return BadRequest("Invalid model object");
+                }
+
+                var expenseEntity = await _repository.Expense.GetExpenseWithDetailsAsync(id);
+                if (expenseEntity == null)
+                {
+                    _logger.LogError($"Expense with id: {id}, hasn't been found in db.");
+                    return NotFound();
+                }
+
+                _mapper.Map(expense, expenseEntity);
+
+                _repository.Expense.UpdateExpense(expenseEntity);
+                await _repository.SaveAsync();
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside UpdateExpense action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
     }
 }
