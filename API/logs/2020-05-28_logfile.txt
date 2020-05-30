@@ -1,0 +1,37 @@
+2020-05-28 20:26:46.3172 INFO Returned all expenses from database.
+2020-05-28 20:27:00.7893 INFO Returned all expenses from database.
+2020-05-28 20:27:42.0762 INFO Returned all expenses from database.
+2020-05-28 20:27:46.0583 INFO Returned all expenses from database.
+2020-05-28 20:28:28.9174 INFO Returned all expenses from database.
+2020-05-28 20:29:26.1216 INFO Returned all expenses from database.
+2020-05-28 20:29:34.1467 INFO Returned all expenses from database.
+2020-05-28 20:29:38.0110 INFO Returned all expenses from database.
+2020-05-28 20:30:15.8656 INFO Returned all expenses from database.
+2020-05-28 20:30:38.6727 INFO Returned all expenses from database.
+2020-05-28 20:30:47.3951 INFO Returned all expenses from database.
+2020-05-28 20:31:31.3224 INFO Returned all expenses from database.
+2020-05-28 21:46:12.5789 INFO Returned all expenses from database.
+2020-05-28 21:47:28.2647 INFO Returned all expenses from database.
+2020-05-28 21:47:35.5025 INFO Returned all expenses from database.
+2020-05-28 21:47:46.5452 INFO Returned all expenses from database.
+2020-05-28 21:48:16.4015 INFO Returned all expenses from database.
+2020-05-28 21:48:20.3934 INFO Returned all expenses from database.
+2020-05-28 21:48:42.7950 INFO Returned all expenses from database.
+2020-05-28 21:51:37.2790 INFO Returned all expenses from database.
+2020-05-28 21:51:49.2001 INFO Returned all expenses from database.
+2020-05-28 21:54:06.1664 INFO Returned all expenses from database.
+2020-05-28 21:54:56.9387 INFO Returned all expenses from database.
+2020-05-28 21:55:01.0020 INFO Returned all expenses from database.
+2020-05-28 22:02:33.6505 INFO Returned all expenses from database.
+2020-05-28 22:11:00.0074 INFO Returned all expenses from database.
+2020-05-28 22:11:22.6126 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-28 23:04:18.7844 INFO Returned all categories from database.
+2020-05-28 23:41:05.3424 INFO Returned all expenses from database.
+2020-05-28 23:41:22.9664 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-28 23:41:57.9481 ERROR Expenses for id: 2, hasn't been found in db.
+2020-05-28 23:42:23.1436 INFO Returned expenses with details for id: 1
+2020-05-28 23:43:07.2674 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-28 23:43:12.6950 INFO Returned expenses with details for id: 3
+2020-05-28 23:44:54.6965 INFO Returned all expenses from database.
+2020-05-28 23:45:07.8280 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-28 23:50:13.1637 INFO Returned expenses with details on date: 24-05-2020 00:00:00

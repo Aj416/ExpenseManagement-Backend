@@ -1,0 +1,181 @@
+2020-05-29 16:25:14.2414 INFO Returned all expenses from database.
+2020-05-29 16:25:38.4111 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 16:31:44.5319 INFO Returned all expenses from database.
+2020-05-29 16:31:50.0655 INFO Returned all expenses from database.
+2020-05-29 16:31:59.4403 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 16:31:59.4438 INFO Returned all categories from database.
+2020-05-29 16:35:53.6526 INFO Returned all expenses from database.
+2020-05-29 16:35:56.9922 INFO Returned all categories from database.
+2020-05-29 16:35:57.0317 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 16:40:11.0102 INFO Returned all categories from database.
+2020-05-29 16:40:11.0102 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 16:43:23.9101 INFO Returned all categories from database.
+2020-05-29 16:43:23.9330 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 16:45:15.0179 INFO Returned all categories from database.
+2020-05-29 16:45:15.0358 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 16:46:24.8977 INFO Returned all categories from database.
+2020-05-29 16:46:24.8982 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 16:48:07.1310 INFO Returned all categories from database.
+2020-05-29 16:48:07.1541 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 16:48:23.0792 INFO Returned all categories from database.
+2020-05-29 16:48:23.0987 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:01:09.4685 INFO Returned all expenses from database.
+2020-05-29 17:01:11.1188 INFO Returned all categories from database.
+2020-05-29 17:01:11.1581 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:02:52.3476 INFO Returned all categories from database.
+2020-05-29 17:02:52.3658 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:03:00.8198 INFO Returned all categories from database.
+2020-05-29 17:03:00.8419 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:03:02.8889 INFO Returned all expenses from database.
+2020-05-29 17:03:04.8349 INFO Returned all categories from database.
+2020-05-29 17:03:04.8354 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:05:23.8046 INFO Returned all categories from database.
+2020-05-29 17:05:23.8208 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:08:37.2650 INFO Returned all categories from database.
+2020-05-29 17:08:37.2834 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:09:00.0952 INFO Returned all categories from database.
+2020-05-29 17:09:00.0952 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:09:07.1021 INFO Returned all categories from database.
+2020-05-29 17:09:07.1179 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:09:09.8314 INFO Returned all expenses from database.
+2020-05-29 17:09:14.0537 INFO Returned all categories from database.
+2020-05-29 17:09:14.0629 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:11:29.0785 INFO Returned all categories from database.
+2020-05-29 17:11:29.1017 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:11:47.7423 INFO Returned all expenses from database.
+2020-05-29 17:11:50.2890 INFO Returned all categories from database.
+2020-05-29 17:11:50.2938 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:12:11.1500 INFO Returned all categories from database.
+2020-05-29 17:12:11.1747 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:12:16.7101 INFO Returned all categories from database.
+2020-05-29 17:12:16.7285 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:12:38.1512 INFO Returned all categories from database.
+2020-05-29 17:12:38.1825 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 17:12:46.4948 INFO Returned all expenses from database.
+2020-05-29 17:12:49.1604 INFO Returned all categories from database.
+2020-05-29 17:12:49.1695 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-29 22:16:58.2098 INFO Returned all expenses from database.
+2020-05-29 22:17:28.3026 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-29 22:37:38.0717 INFO Returned all expenses from database.
+2020-05-29 22:37:42.8545 INFO Returned all categories from database.
+2020-05-29 22:37:42.8545 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:39:45.4428 INFO Returned all categories from database.
+2020-05-29 22:39:45.5146 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:49:18.9587 INFO Returned all categories from database.
+2020-05-29 22:49:19.0454 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:49:25.3484 INFO Returned all categories from database.
+2020-05-29 22:49:25.3646 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:51:11.2702 INFO Returned all categories from database.
+2020-05-29 22:51:11.2887 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:51:48.8101 INFO Returned all categories from database.
+2020-05-29 22:51:48.8402 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:51:55.1371 INFO Returned all categories from database.
+2020-05-29 22:51:55.1558 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:52:31.3759 INFO Returned all categories from database.
+2020-05-29 22:52:31.4091 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:53:03.9112 INFO Returned all sources from database.
+2020-05-29 22:54:45.8526 INFO Returned all categories from database.
+2020-05-29 22:54:45.8755 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:54:59.6349 INFO Returned all categories from database.
+2020-05-29 22:54:59.6513 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:58:29.8957 INFO Returned all categories from database.
+2020-05-29 22:58:29.9137 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:59:10.7855 INFO Returned all categories from database.
+2020-05-29 22:59:10.8040 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:59:39.6741 INFO Returned all categories from database.
+2020-05-29 22:59:39.7070 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 22:59:39.7188 INFO Returned all sources from database.
+2020-05-29 23:05:12.6825 INFO Returned all categories from database.
+2020-05-29 23:05:12.6985 INFO Returned all sources from database.
+2020-05-29 23:05:12.6985 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:06:10.7972 INFO Returned all categories from database.
+2020-05-29 23:06:10.8039 INFO Returned all sources from database.
+2020-05-29 23:06:10.8039 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:10:56.7934 INFO Returned all categories from database.
+2020-05-29 23:10:56.8169 INFO Returned all sources from database.
+2020-05-29 23:10:56.8224 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:12:33.2344 INFO Returned all categories from database.
+2020-05-29 23:12:33.2344 INFO Returned all sources from database.
+2020-05-29 23:12:33.2708 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:13:00.6839 INFO Returned all sources from database.
+2020-05-29 23:13:00.6839 INFO Returned all categories from database.
+2020-05-29 23:13:00.7008 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:13:16.7089 INFO Returned all categories from database.
+2020-05-29 23:13:16.7320 INFO Returned all sources from database.
+2020-05-29 23:13:16.7446 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:19:01.8406 INFO Returned all categories from database.
+2020-05-29 23:19:01.8556 INFO Returned all sources from database.
+2020-05-29 23:19:01.8556 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:19:11.1332 INFO Returned all categories from database.
+2020-05-29 23:19:11.1544 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:19:11.1544 INFO Returned all sources from database.
+2020-05-29 23:20:12.8065 INFO Returned all categories from database.
+2020-05-29 23:20:12.8237 INFO Returned all sources from database.
+2020-05-29 23:20:12.8390 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:20:23.3519 INFO Returned all expenses from database.
+2020-05-29 23:20:31.6274 INFO Returned all categories from database.
+2020-05-29 23:20:31.6322 INFO Returned all sources from database.
+2020-05-29 23:20:31.6322 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:20:34.4286 INFO Returned all expenses from database.
+2020-05-29 23:21:52.2568 INFO Returned all expenses from database.
+2020-05-29 23:24:43.8449 INFO Returned all expenses from database.
+2020-05-29 23:25:02.1831 INFO Returned all categories from database.
+2020-05-29 23:25:02.1999 INFO Returned all sources from database.
+2020-05-29 23:25:02.2448 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-29 23:25:15.9404 INFO Returned all expenses from database.
+2020-05-29 23:25:20.5629 INFO Returned all categories from database.
+2020-05-29 23:25:20.5703 INFO Returned all sources from database.
+2020-05-29 23:25:20.5703 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:25:36.2557 INFO Returned all expenses from database.
+2020-05-29 23:25:49.9302 INFO Returned all categories from database.
+2020-05-29 23:25:49.9302 INFO Returned all sources from database.
+2020-05-29 23:25:49.9490 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:25:55.2615 INFO Returned all expenses from database.
+2020-05-29 23:26:11.3570 INFO Returned all expenses from database.
+2020-05-29 23:26:33.2267 INFO Returned all categories from database.
+2020-05-29 23:26:33.2928 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-29 23:26:33.3079 INFO Returned all sources from database.
+2020-05-29 23:27:58.8322 INFO Returned all categories from database.
+2020-05-29 23:27:58.8579 INFO Returned all sources from database.
+2020-05-29 23:27:58.8579 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-29 23:28:02.4347 INFO Returned all expenses from database.
+2020-05-29 23:28:50.3841 INFO Returned all expenses from database.
+2020-05-29 23:29:24.2050 INFO Returned all expenses from database.
+2020-05-29 23:29:38.1901 INFO Returned all expenses from database.
+2020-05-29 23:29:40.5767 INFO Returned all categories from database.
+2020-05-29 23:29:40.5767 INFO Returned all sources from database.
+2020-05-29 23:29:40.5846 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:29:51.7011 INFO Returned all expenses from database.
+2020-05-29 23:30:15.0224 INFO Returned all expenses from database.
+2020-05-29 23:30:53.3445 INFO Returned all expenses from database.
+2020-05-29 23:30:56.1872 INFO Returned all categories from database.
+2020-05-29 23:30:56.1872 INFO Returned all sources from database.
+2020-05-29 23:30:56.1974 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:30:58.8051 INFO Returned all expenses from database.
+2020-05-29 23:31:16.0588 INFO Returned all categories from database.
+2020-05-29 23:31:16.0588 INFO Returned all sources from database.
+2020-05-29 23:31:16.0741 INFO Returned expenses with details on date: 24-05-2020 00:00:00
+2020-05-29 23:31:19.3048 INFO Returned all expenses from database.
+2020-05-29 23:31:25.7294 INFO Returned all categories from database.
+2020-05-29 23:31:25.7294 INFO Returned all sources from database.
+2020-05-29 23:31:25.7294 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-29 23:32:07.9845 INFO Returned all categories from database.
+2020-05-29 23:38:59.7286 INFO Returned all categories from database.
+2020-05-29 23:39:30.1629 INFO Returned all sources from database.
+2020-05-29 23:41:09.6097 INFO Returned all expenses from database.
+2020-05-29 23:43:27.7608 INFO Returned all expenses from database.
+2020-05-29 23:46:30.6044 INFO Returned all expenses from database.
+2020-05-29 23:48:23.1406 INFO Returned all expenses from database.
+2020-05-29 23:49:04.6577 INFO Returned expenses with details on date: 29-05-2020 00:00:00
+2020-05-29 23:49:20.1860 INFO Returned all expenses from database.
+2020-05-29 23:49:27.2086 INFO Returned all categories from database.
+2020-05-29 23:49:27.2293 INFO Returned expenses with details on date: 29-05-2020 00:00:00
+2020-05-29 23:49:27.2293 INFO Returned all sources from database.
+2020-05-29 23:49:46.9414 INFO Returned all expenses from database.
+2020-05-29 23:50:38.2974 INFO Returned all expenses from database.
+2020-05-29 23:50:59.7810 INFO Returned all categories from database.
+2020-05-29 23:50:59.8232 INFO Returned expenses with details on date: 29-05-2020 00:00:00
+2020-05-29 23:50:59.8440 INFO Returned all sources from database.
+2020-05-29 23:52:22.6434 INFO Returned all categories from database.
+2020-05-29 23:52:22.6434 INFO Returned all sources from database.
+2020-05-29 23:52:22.6681 INFO Returned expenses with details on date: 29-05-2020 00:00:00

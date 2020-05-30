@@ -26,11 +26,11 @@ namespace Repository
             Delete(expense);
         }
 
-        public async Task<IEnumerable<Expense>> GetAllExpenseAsync()
+        public async Task<IEnumerable<Expense>> GetAllExpenseAsync(DateTime date)
         {
             return await FindAll()
                 .Include(exp => exp.Detail)
-                .Where(exp => exp.Date.Month.Equals(DateTime.Now.Month) && exp.Date.Year.Equals(DateTime.Now.Year))
+                .Where(exp => exp.Date.Month.Equals(date.Month) && exp.Date.Year.Equals(date.Year))
                 .OrderByDescending(exp => exp.Date)
                 .ToListAsync();
         }
@@ -39,6 +39,8 @@ namespace Repository
         {
             return await FindByCondition(exp => exp.Date.Day.Equals(date.Day) && exp.Date.Month.Equals(date.Month) && exp.Date.Year.Equals(date.Year))
                 .Include(exp => exp.Detail)
+                .Include(exp => exp.Detail.Category)
+                .Include(exp => exp.Detail.Source)
                 .ToListAsync();
         }
 

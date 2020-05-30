@@ -30,11 +30,16 @@ namespace API.Controllers
 
         // GET: api/Expenses
         [HttpGet]
-        public async Task<IActionResult> GetAllExpense()
+        public async Task<IActionResult> GetAllExpense(DateTime? date)
         {
             try
             {
-                var expenses = await _repository.Expense.GetAllExpenseAsync();
+                if (!date.HasValue)
+                {
+                    date = DateTime.Now;
+                }
+
+                var expenses = await _repository.Expense.GetAllExpenseAsync(date.Value);
                 _logger.LogInfo($"Returned all expenses from database.");
 
                 var result = expenses.GroupBy(exp => exp.Date.Date)
@@ -50,7 +55,7 @@ namespace API.Controllers
         }
 
         //// GET: api/Expenses/5
-        [HttpGet("{date}/details", Name = "ExpenseWithDetailsByDate")]
+        [HttpGet("list/{date}/", Name = "ExpenseWithDetailsByDate")]
         public async Task<IActionResult> GetExpenseWithDetails(DateTime date)
         {
             try
@@ -76,7 +81,7 @@ namespace API.Controllers
             }
         }
 
-        [HttpGet("{id}", Name = "ExpenseWithDetailsById")]
+        [HttpGet("detail/{id}", Name = "ExpenseWithDetailsById")]
         public async Task<IActionResult> GetExpenseWithDetails(int id)
         {
             try

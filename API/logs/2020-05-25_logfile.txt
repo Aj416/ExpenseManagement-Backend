@@ -41,3 +41,11 @@ System.Collections.Generic.List`1[[Entities.Models.Expense, Entities, Version=1.
 2020-05-25 21:57:11.2405 INFO Returned ExpenseDetail with id: 4
 2020-05-25 22:05:13.7579 ERROR Something went wrong inside DeleteExpenseDetail action: An error occurred while updating the entries. See the inner exception for details.
 2020-05-25 22:28:56.4336 INFO Returned ExpenseDetail with id: 4
+2020-05-25 22:42:29.9144 INFO Returned all expenses from database.
+2020-05-25 22:43:05.8121 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-25 22:44:32.8540 INFO Returned ExpenseDetail with id: 2
+2020-05-25 22:45:21.5847 INFO Returned all expenses from database.
+2020-05-25 22:45:38.7902 INFO Returned expenses with details on date: 23-05-2020 00:00:00
+2020-05-25 22:45:56.4247 ERROR Expenses for id: 2, hasn't been found in db.
+2020-05-25 22:46:07.0735 INFO Returned expenses with details for id: 3
+2020-05-25 22:46:28.1345 INFO Returned expenses with details for id: 1
