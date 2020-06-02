@@ -177,5 +177,49 @@ namespace API.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
+
+        // GET: api/Expenses/category-report/2020-05-02
+        [HttpGet("category-report/{date}")]
+        public async Task<IActionResult> GetCategoryWiseExpense(DateTime date)
+        {
+            try
+            {
+                var expenses = await _repository.Expense.GetMonthWiseExpense(date);
+                _logger.LogInfo($"Returned month wise expense from database.");
+
+                var result = expenses.GroupBy(exp => exp.Detail.Category.Category1)
+                    .Select(dto => new CategoryReportDto { Category = dto.Key, Amount = dto.Sum(x => x.Detail.Amount) })
+                    .OrderByDescending(dto => dto.Amount);
+                return Ok(result);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside GetCategoryWiseExpense action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+        // GET: api/Expenses/payer-report/2020-05-02
+        [HttpGet("payer-report/{date}")]
+        public async Task<IActionResult> GetPayertWiseExpense(DateTime date)
+        {
+            try
+            {
+                var expenses = await _repository.Expense.GetMonthWiseExpense(date);
+                _logger.LogInfo($"Returned month wise expense from database.");
+
+                var result = expenses.GroupBy(exp => new { exp.Detail.Source.BankName, exp.Detail.Source.AccountHolderName })
+                    .Select(dto => new PayerReportDto { Payer = dto.Key.AccountHolderName + " => " + dto.Key.BankName, Amount = dto.Sum(x => x.Detail.Amount) })
+                    .OrderByDescending(dto => dto.Amount);
+                return Ok(result);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong inside GetPayertWiseExpense action: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
     }
 }

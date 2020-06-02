@@ -13,5 +13,7 @@ namespace Contracts
         void CreateExpense(Expense expense);
         void UpdateExpense(Expense expense);
         void DeleteExpense(Expense expense);
+        Task<IEnumerable<Expense>> GetMonthWiseExpense(DateTime date);
+        
     }
 }

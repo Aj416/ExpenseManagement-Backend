@@ -1,0 +1,5 @@
+2020-06-02 22:37:58.0370 INFO Returned all expenses from database.
+2020-06-02 22:38:18.6619 INFO Returned all expenses from database.
+2020-06-02 22:55:40.4948 INFO Returned month wise expense from database.
+2020-06-02 22:58:26.0071 INFO Returned month wise expense from database.
+2020-06-02 22:58:56.8091 INFO Returned month wise expense from database.
