@@ -1,0 +1,67 @@
+2020-06-03 20:44:15.3650 INFO Returned all categories from database.
+2020-06-03 20:44:17.2325 INFO Returned all expenses from database.
+2020-06-03 20:44:21.8151 INFO Returned all expenses from database.
+2020-06-03 20:44:23.8006 INFO Returned all categories from database.
+2020-06-03 20:44:23.8218 INFO Returned all sources from database.
+2020-06-03 20:44:23.8438 INFO Returned expenses with details on date: 03-06-2020 00:00:00
+2020-06-03 20:44:25.4436 INFO Returned all expenses from database.
+2020-06-03 20:44:49.1101 INFO Returned all expenses from database.
+2020-06-03 20:45:40.8554 INFO Returned all expenses from database.
+2020-06-03 20:45:51.9384 INFO Returned all expenses from database.
+2020-06-03 22:17:33.7494 INFO Returned all expenses from database.
+2020-06-03 22:17:45.8362 INFO Returned month wise expense from database.
+2020-06-03 22:18:58.1343 INFO Returned month wise expense from database.
+2020-06-03 22:25:29.7830 INFO Returned month wise expense from database.
+2020-06-03 22:25:38.7718 INFO Returned all expenses from database.
+2020-06-03 22:27:26.9728 INFO Returned all expenses from database.
+2020-06-03 22:29:08.3928 INFO Returned all expenses from database.
+2020-06-03 22:32:22.3984 INFO Returned all expenses from database.
+2020-06-03 22:32:30.3672 INFO Returned all expenses from database.
+2020-06-03 22:35:48.4268 INFO Returned all expenses from database.
+2020-06-03 22:35:54.2678 INFO Returned all expenses from database.
+2020-06-03 22:35:59.7071 INFO Returned all expenses from database.
+2020-06-03 22:36:07.8351 INFO Returned all expenses from database.
+2020-06-03 22:38:33.8099 INFO Returned all expenses from database.
+2020-06-03 22:39:09.2001 INFO Returned all expenses from database.
+2020-06-03 22:39:41.7875 INFO Returned all expenses from database.
+2020-06-03 22:39:46.3390 INFO Returned all expenses from database.
+2020-06-03 22:40:02.6188 INFO Returned all expenses from database.
+2020-06-03 22:40:05.9704 INFO Returned all expenses from database.
+2020-06-03 22:40:15.9060 INFO Returned all expenses from database.
+2020-06-03 22:40:38.3147 INFO Returned all expenses from database.
+2020-06-03 22:40:55.6306 INFO Returned all expenses from database.
+2020-06-03 22:41:18.7911 INFO Returned all expenses from database.
+2020-06-03 22:45:20.2830 INFO Returned all expenses from database.
+2020-06-03 22:46:00.9900 INFO Returned all expenses from database.
+2020-06-03 22:46:17.9412 INFO Returned all expenses from database.
+2020-06-03 22:48:07.5747 INFO Returned all expenses from database.
+2020-06-03 22:48:18.3701 INFO Returned all expenses from database.
+2020-06-03 22:48:33.5258 INFO Returned all expenses from database.
+2020-06-03 22:49:11.9798 INFO Returned all expenses from database.
+2020-06-03 22:49:16.5196 INFO Returned all expenses from database.
+2020-06-03 22:49:20.4684 INFO Returned month wise expense from database.
+2020-06-03 22:49:27.3023 INFO Returned month wise expense from database.
+2020-06-03 23:09:35.8615 INFO Returned month wise expense from database.
+2020-06-03 23:11:20.6682 INFO Returned all expenses from database.
+2020-06-03 23:11:22.6560 INFO Returned all sources from database.
+2020-06-03 23:11:22.6897 INFO Returned expenses with details on date: 03-06-2020 00:00:00
+2020-06-03 23:11:22.6986 INFO Returned all categories from database.
+2020-06-03 23:11:25.6481 INFO Returned all expenses from database.
+2020-06-03 23:11:26.6012 INFO Returned all categories from database.
+2020-06-03 23:11:26.6012 INFO Returned all sources from database.
+2020-06-03 23:11:41.6552 INFO Returned all expenses from database.
+2020-06-03 23:11:46.3529 INFO Returned all categories from database.
+2020-06-03 23:11:46.3529 INFO Returned all sources from database.
+2020-06-03 23:11:46.3529 INFO Returned expenses with details on date: 03-06-2020 00:00:00
+2020-06-03 23:11:48.2325 INFO Returned all expenses from database.
+2020-06-03 23:11:51.1273 INFO Returned month wise expense from database.
+2020-06-03 23:11:57.8047 INFO Returned month wise expense from database.
+2020-06-03 23:12:04.7084 INFO Returned month wise expense from database.
+2020-06-03 23:12:24.6993 INFO Returned month wise expense from database.
+2020-06-03 23:12:38.3286 INFO Returned month wise expense from database.
+2020-06-03 23:12:48.2777 INFO Returned month wise expense from database.
+2020-06-03 23:12:55.6026 INFO Returned all expenses from database.
+2020-06-03 23:12:59.1385 INFO Returned month wise expense from database.
+2020-06-03 23:13:01.3680 INFO Returned month wise expense from database.
+2020-06-03 23:13:03.9134 INFO Returned month wise expense from database.
+2020-06-03 23:13:08.6844 INFO Returned month wise expense from database.
